@@ -161,6 +161,16 @@ CREATE TABLE classmodule (
     FOREIGN KEY(timetable_id) REFERENCES timetable(timetable_id) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
+CREATE TABLE submissionfeedback(
+    feedback_id INT,
+    grade INT,
+    date_graded DATETIME,
+    graded_by INT,
+    comments VARCHAR(255),
+    PRIMARY KEY(feedback_id),
+    FOREIGN KEY(graded_by) REFERENCES unm_user(user_id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
 CREATE TABLE submission (
     submission_id INT,
     user_id INT,
@@ -173,10 +183,20 @@ CREATE TABLE submission (
     start_date DATETIME,
     due_date DATETIME,
     file VARCHAR(255),
-    feedback VARCHAR(255),
+    feedback_id INT,
     PRIMARY KEY(submission_id),
     FOREIGN KEY(user_id) REFERENCES unm_user(user_id) ON DELETE RESTRICT ON UPDATE CASCADE,
-    FOREIGN KEY(module_id) REFERENCES module(module_id) ON DELETE RESTRICT ON UPDATE CASCADE
+    FOREIGN KEY(module_id) REFERENCES module(module_id) ON DELETE RESTRICT ON UPDATE CASCADE,
+    FOREIGN KEY(feedback_id) REFERENCES submissionfeedback(feedback_id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
+CREATE TABLE exam_marks (
+    module_id INT,
+    user_id INT,
+    marks INT,
+    PRIMARY KEY(module_id, user_id),
+    FOREIGN KEY(module_id) REFERENCES module(module_id) ON DELETE RESTRICT ON UPDATE CASCADE,
+    FOREIGN KEY(user_id) REFERENCES unm_user(user_id) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 CREATE TABLE notification (
