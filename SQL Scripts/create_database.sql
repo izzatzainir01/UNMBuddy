@@ -51,33 +51,25 @@ CREATE TABLE unm_user (
 
 CREATE TABLE faculty (
     faculty_id INT,
-    faculty_code VARCHAR(12),
     name VARCHAR(63),
     PRIMARY KEY(faculty_id)
 );
 
 CREATE TABLE school (
     school_id INT,
-    school_code VARCHAR(12),
     name VARCHAR(63),
     faculty_id INT,
     PRIMARY KEY(school_id),
     FOREIGN KEY(faculty_id) REFERENCES faculty(faculty_id)
 );
 
-CREATE TABLE course_level (
+CREATE TABLE courselevel (
     level_id INT,
     type VARCHAR(12),
     PRIMARY KEY(level_id)
 );
 
-CREATE TABLE course_mode (
-    mode_id INT,
-    type VARCHAR(12),
-    PRIMARY KEY(mode_id)
-);
-
-CREATE TABLE course_intake (
+CREATE TABLE courseintake (
     intake_id INT,
     month VARCHAR(10),
     PRIMARY KEY(intake_id)
@@ -90,17 +82,16 @@ CREATE TABLE course (
     level_id INT,
     school_id INT,
     faculty_id INT,
-    mode_id INT,
-    duration INT,
+    duration_full INT,
+    duration_part INT,
     intake_id INT,
     year YEAR,
     fee INT,
     PRIMARY KEY(course_id),
-    FOREIGN KEY(level_id) REFERENCES course_level(level_id) ON DELETE RESTRICT ON UPDATE CASCADE,
+    FOREIGN KEY(level_id) REFERENCES courselevel(level_id) ON DELETE RESTRICT ON UPDATE CASCADE,
     FOREIGN KEY(school_id) REFERENCES school(school_id) ON DELETE RESTRICT ON UPDATE CASCADE,
     FOREIGN KEY(faculty_id) REFERENCES faculty(faculty_id) ON DELETE RESTRICT ON UPDATE CASCADE,
-    FOREIGN KEY(mode_id) REFERENCES course_mode(mode_id) ON DELETE RESTRICT ON UPDATE CASCADE,
-    FOREIGN KEY(intake_id) REFERENCES course_intake(intake_id) ON DELETE RESTRICT ON UPDATE CASCADE
+    FOREIGN KEY(intake_id) REFERENCES courseintake(intake_id) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 ALTER TABLE unm_user
@@ -108,12 +99,6 @@ ADD FOREIGN KEY(course_id)
 REFERENCES course(course_id)
 ON DELETE RESTRICT
 ON UPDATE CASCADE;
-
-CREATE TABLE enrolment (
-    enrolment_id INT,
-    type VARCHAR(12),
-    PRIMARY KEY(enrolment_id)
-);
 
 CREATE TABLE semester (
     semester_id INT,
@@ -125,12 +110,12 @@ CREATE TABLE module (
     module_id INT,
     module_code VARCHAR(12),
     name VARCHAR(63),
-    enrolment_id INT,
+    enrolment BOOLEAN,
     course_id INT,
     semester_id INT,
+    year INT,
     credit INT,
     PRIMARY KEY(module_id),
-    FOREIGN KEY(enrolment_id) REFERENCES enrolment(enrolment_id) ON DELETE RESTRICT ON UPDATE CASCADE,
     FOREIGN KEY(course_id) REFERENCES course(course_id) ON DELETE RESTRICT ON UPDATE CASCADE,
     FOREIGN KEY(semester_id) REFERENCES semester(semester_id) ON DELETE RESTRICT ON UPDATE CASCADE
 );
@@ -164,6 +149,7 @@ CREATE TABLE classmodule (
 CREATE TABLE submissionfeedback(
     feedback_id INT,
     grade INT,
+    total_grade INT,
     date_graded DATETIME,
     graded_by INT,
     comments VARCHAR(255),
@@ -268,4 +254,55 @@ CREATE TABLE report (
     text TEXT,
     datetime_reported DATETIME,
     PRIMARY KEY(report_id)
+);
+
+CREATE TABLE usercard (
+    card_id INT,
+    picture VARCHAR(255),
+    activation_status BOOLEAN,
+    user_id INT,
+    PRIMARY KEY(card_id),
+    FOREIGN KEY(user_id) REFERENCES unm_user(user_id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
+CREATE TABLE salary (
+    salary_id INT,
+    user_id INT,
+    monthly INT,
+    PRIMARY KEY(salary_id),
+    FOREIGN KEY(user_id) REFERENCES unm_user(user_id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
+CREATE TABLE payment (
+    payment_id INT,
+    user_id INT,
+    description VARCHAR(32),
+    amount INT,
+    paid_status BOOLEAN,
+    date_issued DATE,
+    due_date DATE,
+    date_paid DATE,
+    PRIMARY KEY(payment_id),
+    FOREIGN KEY(user_id) REFERENCES unm_user(user_id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
+CREATE TABLE application (
+    application_id INT,
+    user_id INT,
+    date_applied DATE,
+    application_status BOOLEAN,
+    PRIMARY KEY(application_id),
+    FOREIGN KEY(user_id) REFERENCES unm_user(user_id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
+CREATE TABLE document (
+    document_id INT,
+    user_id INT,
+    location VARCHAR(255),
+    name VARCHAR(63),
+    type VARCHAR(20),
+    date_uploaded DATE,
+    size INT,
+    PRIMARY KEY(document_id),
+    FOREIGN KEY(user_id) REFERENCES unm_user(user_id) ON DELETE RESTRICT ON UPDATE CASCADE
 );
