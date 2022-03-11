@@ -17,7 +17,7 @@
 
 >The only difference of the index.php file and the original file is that I added two new lines
 
-> - "<form action="login.php" method="post">"
+> - line 30 for form
 
 > 
-> - "</form>"
+> - and line 42 for closing form
