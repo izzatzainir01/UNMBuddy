@@ -10,4 +10,4 @@
 >The database is UNMBUDDYTEST, you can create a database similar to mine 
 >
 
-!https://i.ibb.co/VMtQm5x/PHP.png
+![Database Image](https://i.ibb.co/VMtQm5x/PHP.png)
