@@ -149,7 +149,6 @@ CREATE TABLE classmodule (
 CREATE TABLE submissionfeedback(
     feedback_id INT,
     grade INT,
-    total_grade INT,
     date_graded DATETIME,
     graded_by INT,
     comments VARCHAR(255),
@@ -166,8 +165,9 @@ CREATE TABLE submission (
     attempt INT,
     submission_status BOOLEAN,
     grading_status BOOLEAN,
-    start_date DATETIME,
-    due_date DATETIME,
+    start_datetime DATETIME,
+    due_datetime DATETIME,
+    datetime_submitted DATETIME,
     file VARCHAR(255),
     feedback_id INT,
     PRIMARY KEY(submission_id),
@@ -176,9 +176,9 @@ CREATE TABLE submission (
     FOREIGN KEY(feedback_id) REFERENCES submissionfeedback(feedback_id) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
-CREATE TABLE exam_marks (
-    module_id INT,
+CREATE TABLE exammarks (
     user_id INT,
+    module_id INT,
     marks INT,
     PRIMARY KEY(module_id, user_id),
     FOREIGN KEY(module_id) REFERENCES module(module_id) ON DELETE RESTRICT ON UPDATE CASCADE,
@@ -228,7 +228,7 @@ CREATE TABLE newsletter (
     newsletter_id INT,
     title VARCHAR(63),
     author INT,
-    date_published DATE,
+    date_published DATETIME,
     body TEXT,
     PRIMARY KEY(newsletter_id),
     FOREIGN KEY(author) REFERENCES unm_user(user_id) ON DELETE RESTRICT ON UPDATE CASCADE
