@@ -127,7 +127,7 @@ input[type="search"]:focus + .suggestions li{
 
 .Results{
 	position: relative;
-	background: #D6E8EE;
+	background: #fff;
 	min-height: 100vh;
 	width: calc(100% - 240px);
 	left: 240px;
@@ -167,7 +167,7 @@ input[type="search"]:focus + .suggestions li{
 }
 
 .Results nav .day{
-	background: #97CADB;
+	background: #E0F5FE;
 	text-align: center;
 	color: #000;
 	padding: 20px 10px;
@@ -185,7 +185,7 @@ input[type="search"]:focus + .suggestions li{
 }
 
 .dropbtn {
-	background-color: #97CADB;
+	background-color: #E0F5FE;
 	color: #000;
 	padding: 13px;
 	font-size: 20px;
@@ -197,7 +197,7 @@ input[type="search"]:focus + .suggestions li{
 }
 
 .dropbtn:hover{
-	background-color:#4682B4;
+	background-color: skyblue;
 }
 
 .dropdown_menu {
@@ -226,7 +226,7 @@ input[type="search"]:focus + .suggestions li{
 
 #navbar{
 	overflow: hidden;
-	background-color: #036698;
+	background-color: none;
 	width: 98%;
 	height: 120px;
 	margin-left: 1%;
@@ -241,7 +241,7 @@ input[type="search"]:focus + .suggestions li{
 	margin-left: 20px;
 	text-align: left;
 	font-size: 30px;
-	color: #fff;
+	color: #000;
 }
 
 #navbar ul.path{
@@ -260,24 +260,25 @@ input[type="search"]:focus + .suggestions li{
 }
 
 #navbar ul.path li a {
-	color: #A4D2EF;
+	color: #006198;
 	text-decoration: underline;
 }
 
 #navbar ul.path li a:hover {
-	color: #01447e;
+	color: darkblue;
 	text-decoration: underline;
 }
 
 .Module1{
 	overflow: auto;
-	background-color: #fff;
+	background-color: #E0F5FE;
 	border: 1px solid black;
-	width: 98%;	
+	width: 96%;	
 	height: 400px;
-	margin-left: 1%;
-	margin-top: 50px;
+	margin-left: 2%;
+	margin-top: 30px;
 	padding: 20px 10px 20px 10px;
+	border-radius:10px;
 }
 
 .Module1 table{
@@ -297,19 +298,68 @@ td{
 }
 
 .footer{
-	background-color: #02457A;
-	height: 250px;
 	width: 100%;
+	background-color:#1762A7;
+	height: 500px;
 	margin-top: 40px;
 }
 
-.footer a{
-	color: #f2f2f2;
+.footerone,
+.footertwo,
+.footerthree
+ {
+	width:28%;
+	float: left;
+	text-align: left;
+	color: #fff;
+	padding-left: 20px;
+	padding-top: 20px;
 }
 
-.footer p{
-	color: #f2f2f2;
+.footerone ul{
+	margin: 0px;
+	padding: 0;
+	list-style: none;
 }
+
+.footerone img{
+	border: none;
+	padding-bottom: 5px;
+	margin: 15px 10px 0px 10px;
+}
+
+.footerone p{
+	width: 70%;
+	margin-top: 0px;
+	font-family: bahnscrift semibold semiconden;
+}
+
+.footertwo ul{
+	margin: 10px;
+	list-style: none;
+}
+.footertwo ul a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	font-size: 25;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.footer_bottom{
+	width: 100%;
+	background-color: #003558;
+	color: white;
+	height: 25px;
+	float: right;
+	font-weight: normal;
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	padding top: 20px;
+}  
 </style>
 </head>
 <body>
@@ -319,7 +369,7 @@ td{
       <i class='bx bx-home-alt'></i>
       </a>
       <figure>
-	      <img src="C:\Users\User\Downloads\UNMBuddy_logo.jpeg"width="180px" style="left:80%">
+	      <img src="pictures/logo.jpeg"width="180px" style="left:80%">
 	  </figure> 
       </div>
       <ul class="options">
@@ -431,6 +481,7 @@ td{
 	</ul>
 </div>
 
+<hr style="width:97%; margin-top: 25px; margin-left:20px;">
 <div class="Module1">
 	<p style="font-size:18px"><b>Software Engineering Group Project</b> &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp Calculated weight &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Grade &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Range &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Percentage &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Total</p>
 	<table class="result">
@@ -500,9 +551,68 @@ td{
 </div>
 
 <footer class="footer">
+<section class="footerone">
+	<figure>
+	<img src="pictures/logo.jpeg "width="100px">
+	</figure>
 	<br>
- 	<p>&nbsp &nbsp Author: Hong Shen Chin</p>
-  	<p>&nbsp &nbsp <a href="mailto:hege@example.com">hege@example.com</a></p>
+	<p>UNM BUDDY is an integrated platform for improving student engagement in higher education</p>
+</section>
+<section class="footertwo">
+	<br>
+	<h2>Navigation</h2>
+	<ul>
+	<br>
+	<li><a href="home.html">Dashboard</a></li>
+	<br>
+	<li><a href="#">Finance</a></li>
+	<br>
+	<li><a href="newsletters.html">Newsletter</a></li>
+	<br>
+	<li><a href="#">Result</a></li>
+	<br>
+	<li><a href="#">Class</a></li>
+	<br>
+	<li><a href="#">Module Page</a></li>
+	<br>
+	<li><a href="#">Moudule Details</a></li>
+	<br>
+	<li><a href="#">Student Profile</a></li>
+	</ul>
+	
+</section>
+<section class="footerthree">
+	<br>
+	<h2>Get in touch</h2>
+	<br>
+	<p><b>Malaysia</b></p>
+	<br>
+	<p class="helpnumber">+6 (03) 8924 8199</p>
+	
+	<br>
+	
+	<p class="helpmail">ITServiceDesk@nottingham.edu.my</p>
+	<br><br>
+	<p><b>China</b></p>
+	<br>
+	<p class="helpnumber">+86 (0574) 8818 0000 (ext.8915)</p>
+	
+	<br>
+	
+	<p class="helpmail">e-learning-support@nottingham.edu.cn</p>
+	<br><br>
+	<p><b>United Kingdom</b></p>
+	<br> 
+	<p class="helpnumber">+44 (0115) 9516677 (24hrs)</p>
+	
+	<br>
+	
+	<p class="helpmail"> https://selfservice.nottingham.ac.uk</p>
+</section>
+
+<aside class="footer_bottom">
+&copy; &nbsp UNMBUDDY.com  | Based In Malaysia
+</aside>
 </footer>
 </section>
 
