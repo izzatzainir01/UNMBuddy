@@ -26,16 +26,59 @@
 			background-color:#161b7f;
 			color:white;
 		}
-		.footer .foot {
-			color:white;
+		.footer {
 			width: 100%;
-			text-align: center;
-			float: left;
+    		background-color:#1762A7;
+  			height: 500px;
+  			margin-top: 40px;
 		}
 
-		.footer .footcp {
+		.footerone,
+		.footertwo,
+		.footerthree
+		{
+			width:28%;
+			float: left;
+			text-align: left;
+			color: #fff;
+			padding-left: 20px;
+			padding-top: 20px;
+		}
+
+		.footerone ul{
+			margin: 0px;
+			padding: 0;
+			list-style: none;
+		}
+
+		.footerone img{
+			border: none;
+			padding-bottom: 5px;
+			margin: 15px 10px 0px 10px;
+		}
+
+		.footerone p{
+			width: 70%;
+			margin-top: 0px;
+			font-family: bahnscrift semibold semiconden;
+		}
+
+		.footertwo ul{
+			margin: 10px;
+			list-style: none;
+		}
+		.footertwo ul a{
+			text-transform: uppercase;
+			text-decoration: none;
+			color: #fff;
+			font-size: 25;
+			font-weight: bold;
+			font-size: 15px;
+		}
+
+		.footer_bottom{
 			width: 100%;
-			background-color: #1762A7;
+			background-color: #003558;
 			color: white;
 			height: 25px;
 			float: right;
@@ -47,15 +90,6 @@
 			padding top: 20px;
 		}
 
-		.footer {
-			background-color: #02006c;
-			padding: 15px;
-			text-align: center;
-			position: relative;
-			float: right;
-			width: 100%;
-			height: 290px;
-		}
 		*{
 		margin: 0;
 		padding: 0;
@@ -220,7 +254,7 @@
 		}
 
 		.main nav .day{
-			background: #7F9CCB;
+			background: #E0F5FE;
 			text-align: center;
 			padding: 20px 10px;
 			margin-left: 10px;
@@ -231,7 +265,7 @@
 		.main nav .profile{
 		display: flex;
 		align-items: center;
-		background: #7F9CCB;
+		background: #F5F6FA;
 		border: 2px solid #EFEEF1;
 		border-radius: 6px;
 		height: 50px;
@@ -260,7 +294,7 @@
 		}
 
 		.dropbtn {
-			background-color: #7F9CCB;
+			background-color: #E0F5FE;
 			color: black;
 			padding: 13px;
 			font-size: 20px;
@@ -272,7 +306,7 @@
 		}
 
 		.dropbtn:hover{
-			background-color:#6daffe;
+			background-color: skyblue;
 		}
 
 		.dropdown_menu {
@@ -305,17 +339,15 @@
 		background: #fff;
 		padding: 20px 30px;
 		overflow: scroll;
-		box-shadow: 0px 0px 8px #000;
+		box-shadow: 0px 0px 0px #000;
 		}
 
 		.hd{
-          margin-left: 3%;
           margin-top: 10px;
-          margin-right: 3%; 
           overflow: hidden;
           background-color: #fff;
           border: 2px solid black;
-          width: 94%; 
+          width: 100%; 
           height: auto;
           padding:20px 10px 20px 10px; 
           box-sizing: border-box;
@@ -324,8 +356,8 @@
 
         .hd table{
           width: 100%;
-		  background: #1762A7;
-		  color: #fff;
+		  background: #E0F5FE;
+		  color: #000;
 		  border-radius: 10px;
         }
         .hd td{
@@ -350,7 +382,7 @@
 		<i class='bx bx-home-alt'></i>
 		</a>
 		<figure>
-			<img src="pictures/UNMBLogo.jpeg"width="180px" style="left:80%">
+			<img src="pictures/logo.jpeg"width="180px" style="left:80%">
 		</figure> 
 		</div>
 		<ul class="options">
@@ -477,8 +509,6 @@
   	searchBtn.onclick = function(){
   	sidebar.classList.toggle("active");}
   	</script>
-
-	<p><a name="top"></a></p>
 	
 	<section class="main">
 	<div class = "content">
@@ -570,111 +600,70 @@
 
 	</div>
 	
-	<footer class = "footer"><a href="#top" style="color:white">Back To Top</a>
-
-	<hr />
-	<table class="foot">
-		<tbody>
-			<tr align="left" >
-				<th>Site Information</th>
-				<th></th>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<th>Get in touch</th>
-			</tr>
-			<tr align="left">
-				<td>Moodle help for Students</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td>China</td>
-			</tr>
-			<tr align="left">
-				<td>Moodle help for Staff</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td> +86 (0574) 8818 0000 (ext.8915)</td>
-			</tr>
-			<tr align="left">
-				<td>Terms of use</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td> e-learning-support@nottingham.edu.cn</td>
-			</tr>
-			<tr align="left">
-				<td>UK email access - information</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td>Malaysia</td>
-			</tr>
-			<tr align="left">
-				<td>China email access - information</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td>+6 (03) 8924 8199</td>
-			</tr>
-			<tr align="left">
-				<td>Malaysia email access - information</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td> ITServiceDesk@nottingham.edu.my</td>
-			</tr>
-			<tr align="left">
-				<td>Data Privacy Notice</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td>United Kingdom</td>
-			</tr>
-			<tr align="left">
-				<td>Accessibility Statement</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td> +44 (0115) 9516677 (24hrs)</td>
-			</tr>
-			<tr align="left">
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td> https://selfservice.nottingham.ac.uk</td>
-		</tbody>
-	</table>
-
-	<hr />
-
-	<table class="footcp">
-			<tr>
-				<td>© Copyright 2022 University of Nottingham</td>
-			</tr>
-	</table>
-	</footer>
+	<footer class = "footer">
+		<section class="footerone">
+			<figure>
+			<img src="pictures/logo.jpeg"width="100px">
+			</figure>
+			<br>
+			<p>UNM BUDDY is an integrated platform for improving student engagement in higher education</p>
+		</section>
+		<section class="footertwo">
+			<br>
+			<h2>Navigation</h2>
+			<ul>
+			<br>
+			<li><a href="home.html">Dashboard</a></li>
+			<br>
+			<li><a href="#">Finance</a></li>
+			<br>
+			<li><a href="newsletters.html">Newsletter</a></li>
+			<br>
+			<li><a href="#">Result</a></li>
+			<br>
+			<li><a href="#">Class</a></li>
+			<br>
+			<li><a href="#">Module Page</a></li>
+			<br>
+			<li><a href="#">Moudule Details</a></li>
+			<br>
+			<li><a href="#">Student Profile</a></li>
+			</ul>
+		
+		</section>
+		<section class="footerthree">
+			<br>
+			<h2>Get in touch</h2>
+			<br>
+			<p><b>Malaysia</b></p>
+			<br>
+			<p class="helpnumber">+6 (03) 8924 8199</p>
+		
+			<br>
+		
+			<p class="helpmail">ITServiceDesk@nottingham.edu.my</p>
+			<br><br>
+			<p><b>China</b></p>
+			<br>
+			<p class="helpnumber">+86 (0574) 8818 0000 (ext.8915)</p>
+		
+			<br>
+		
+			<p class="helpmail">e-learning-support@nottingham.edu.cn</p>
+			<br><br>
+			<p><b>United Kingdom</b></p>
+			<br> 
+			<p class="helpnumber">+44 (0115) 9516677 (24hrs)</p>
+		
+			<br>
+		
+			<p class="helpmail"> https://selfservice.nottingham.ac.uk/</p>
+		</section>
+		
+		<aside class="footer_bottom">
+		&copy; &nbsp UNMBUDDY.com  | Based In Malaysia
+		</aside>
+    </footer>
 
 </section>
 
