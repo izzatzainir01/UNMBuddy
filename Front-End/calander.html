@@ -230,6 +230,70 @@
 
         .dropdown:hover .dropbtn {background-color: skyblue;}
 
+        .footer{
+    width: 100%;
+    background-color:#1762A7;
+    height: 500px;
+    margin-top: 40px;
+}
+
+.footerone,
+.footertwo,
+.footerthree
+ {
+    width:28%;
+    float: left;
+    text-align: left;
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.footerone ul{
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+}
+
+.footerone img{
+    border: none;
+    padding-bottom: 5px;
+    margin: 15px 10px 0px 10px;
+}
+
+.footerone p{
+    width: 70%;
+    margin-top: 0px;
+    font-family: bahnscrift semibold semiconden;
+}
+
+.footertwo ul{
+    margin: 10px;
+    list-style: none;
+}
+.footertwo ul a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.footer_bottom{
+    width: 100%;
+    background-color: #003558;
+    color: white;
+    height: 25px;
+    float: right;
+    font-weight: normal;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding top: 20px;
+}
+
 	</style>
 
 	</head>
@@ -409,7 +473,70 @@ let searchBtn = document.querySelector(".bx-search-alt");
 searchBtn.onclick = function(){
 sidebar.classList.toggle("active");}
 </script>
+<footer class="footer">
+<section class="footerone">
+    <figure>
+    <img src="logo.jpeg "width="100px">
+    </figure>
+    <br>
+    <p>UNM BUDDY is an integrated platform for improving student engagement in higher education</p>
+</section>
+<section class="footertwo">
+    <br>
+    <h2>Navigation</h2>
+    <ul>
+    <br>
+    <li><a href="home.html">Dashboard</a></li>
+    <br>
+    <li><a href="#">Finance</a></li>
+    <br>
+    <li><a href="newsletters.html">Newsletter</a></li>
+    <br>
+    <li><a href="#">Result</a></li>
+    <br>
+    <li><a href="#">Class</a></li>
+    <br>
+    <li><a href="#">Module Page</a></li>
+    <br>
+    <li><a href="#">Moudule Details</a></li>
+    <br>
+    <li><a href="#">Student Profile</a></li>
+    </ul>
 
+</section>
+<section class="footerthree">
+    <br>
+    <h2>Get in touch</h2>
+    <br>
+    <p><b>Malaysia</b></p>
+    <br>
+    <p class="helpnumber">+6 (03) 8924 8199</p>
+
+    <br>
+
+    <p class="helpmail">ITServiceDesk@nottingham.edu.my</p>
+    <br><br>
+    <p><b>China</b></p>
+    <br>
+    <p class="helpnumber">+86 (0574) 8818 0000 (ext.8915)</p>
+
+    <br>
+
+    <p class="helpmail">e-learning-support@nottingham.edu.cn</p>
+    <br><br>
+    <p><b>United Kingdom</b></p>
+    <br> 
+    <p class="helpnumber">+44 (0115) 9516677 (24hrs)</p>
+
+    <br>
+
+    <p class="helpmail"> https://selfservice.nottingham.ac.uk/</p>
+</section>
+
+<aside class="footer_bottom">
+&copy; &nbsp UNMBUDDY.com  | Based In Malaysia
+</aside>
+</footer>
 
 	</body>
 </html>
