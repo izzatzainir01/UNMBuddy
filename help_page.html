@@ -2,20 +2,15 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendar</title>
-    <link href="pictures/UNMLogo.png" rel="icon"/>
+    <title>Help</title>
+    <link href="pictures/UNMLogo.png" rel="icon" />
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-    * {
+    *{
         list-style: none;
         text-decoration: none;
         margin: 0;
@@ -24,7 +19,7 @@
         font-family: 'Open Sans', sans-serif;
     }
 
-    body {
+    body{
         background: white;
         overflow-x: hidden;
         display: flex;
@@ -32,7 +27,7 @@
         flex-direction: column;
     }
 
-    .menusidebar .sidebar {
+    .menusidebar .sidebar{
         background: rgb(5, 68, 104);
         background-image: linear-gradient(#05CAFF, #0373FF, #0239BF);
         position: fixed;
@@ -44,13 +39,13 @@
         transition: all 0.5s ease;
     }
 
-    .menusidebar .sidebar .profile {
+    .menusidebar .sidebar .profile{
         margin-bottom: 30px;
         text-align: center;
         padding-top: 10px;
     }
 
-    .menusidebar .sidebar .profile img {
+    .menusidebar .sidebar .profile img{
 
         display: block;
         width: 100px;
@@ -59,19 +54,19 @@
         margin: 0 auto;
     }
 
-    .menusidebar .sidebar .profile h3 {
+    .menusidebar .sidebar .profile h3{
         color: #ffffff;
-        margin: 10px 0 0px;
+        margin: 10px 0 5px;
     }
 
-    .menusidebar .sidebar .profile p {
+    .menusidebar .sidebar .profile p{
         color: rgb(206, 240, 253);
         font-size: 14px;
     }
 
-    .menusidebar .sidebar ul li a {
+    .menusidebar .sidebar ul li a{
         display: block;
-        padding: 8% 40px;
+        padding: 10% 40px;
         text-decoration: none;
         color: rgb(241, 237, 237);
         font-size: 17px;
@@ -79,36 +74,36 @@
         font-family: Circular, Verdana, sans-serif;
     }
 
-    .menusidebar .sidebar ul li a .icon {
+    .menusidebar .sidebar ul li a .icon{
         color: #dee4ec;
         width: 30px;
         display: inline-block;
     }
 
     .menusidebar .sidebar ul li a:hover,
-    .menusidebar .sidebar ul li a.active {
+    .menusidebar .sidebar ul li a.active{
         color: #0c7db1;
 
-        background: white;
+        background:white;
     }
 
     .menusidebar .sidebar ul li a:hover .icon,
-    .menusidebar .sidebar ul li a.active .icon {
+    .menusidebar .sidebar ul li a.active .icon{
         color: #0c7db1;
     }
 
     .menusidebar .sidebar ul li a:hover:before,
-    .menusidebar .sidebar ul li a.active:before {
+    .menusidebar .sidebar ul li a.active:before{
         display: block;
     }
 
-    .menusidebar .section {
+    .menusidebar .section{
         width: calc(100% - 225px);
         margin-left: 225px;
         transition: all 0.5s ease;
     }
 
-    .menusidebar .section .top_navbar {
+    .menusidebar .section .top_navbar{
         background: #05CAFF;
         background-image: linear-gradient(to right, #05CAFF, #0373FF, #0239BF);
         height: 50px;
@@ -117,12 +112,12 @@
         padding: 0 30px;
     }
 
-    .menusidebar .section .top_navbar .hamburger a {
+    .menusidebar .section .top_navbar .hamburger a{
         font-size: 28px;
         color: #f4fbff;
     }
 
-    .menusidebar .section .top_navbar .hamburger a:hover {
+    .menusidebar .section .top_navbar .hamburger a:hover{
         color: #a2ecff;
     }
 
@@ -171,11 +166,11 @@
         }
     }
 
-    body.active .menusidebar .sidebar {
+    body.active .menusidebar .sidebar{
         left: -225px;
     }
 
-    body.active .menusidebar .section {
+    body.active .menusidebar .section{
         margin-left: 0;
         width: 100%;
     }
@@ -201,11 +196,11 @@
         color: #eee;
     }
 
-    a:hover {
+    a:hover{
         text-decoration: underline;
     }
 
-    .footer-title {
+    .footer-title{
         color: black;
         font-family: Circular, Verdana, sans-serif;
         font-size: 1.37rem;
@@ -216,13 +211,13 @@
         flex: 1;
     }
 
-    .footer-main {
+    .footer-main{
         padding: 1.25rem 1.875rem;
         display: flex;
         flex-warp: wrap;
     }
 
-    .footer-main a {
+    .footer-main a{
         color: black;
     }
 
@@ -232,7 +227,7 @@
     }
 
     @media only screen and (min-width: 77.5rem) {
-        .footer-main {
+        .footer-main{
             justify-content: space-evenly;
         }
     }
@@ -248,11 +243,11 @@
         border-top: 1px black solid;
     }
 
-    .footer-social-list a {
+    .footer-social-list a{
         color: black;
     }
 
-    .footer-social-list th {
+    .footer-social-list th{
         margin: 0.5rem;
         font-size: 1.25rem;
         padding: 1.25rem;
@@ -264,20 +259,56 @@
         background-color: #333;
         color: white;
     }
-
     .footer-legal-list {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         color: white;
     }
-
     .footer-legal-list li {
         margin: 0.125rem 0.625rem;
     }
 
     .footer-legal-list li:nth-last-child(2) {
         flex: 1;
+    }
+
+    .content{
+        margin-top:6px;
+        height:1150px;
+        background: #fff;
+        padding: 20px 30px;
+        overflow: scroll;
+        box-shadow: 0px 0px 0px #000;
+    }
+
+    .hd{
+        margin-top: 10px;
+        overflow: hidden;
+        background-color: #fff;
+        border: 2px solid black;
+        width: 100%;
+        height: auto;
+        padding:20px 10px 20px 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+
+    .hd table{
+        width: 100%;
+        background: #E0F5FE;
+        color: #000;
+        border-radius: 10px;
+    }
+    .hd td{
+        text-align: center;
+        padding: 8px;
+    }
+
+    .hd th{
+        text-align: left;
+        padding: 8px;
+        font-weight: bold;
     }
 
 </style>
@@ -299,92 +330,97 @@
         </div>
 
         <! contain >
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6 text-center mb-5">
-                    <h2 class="heading-section"></h2>
+        <div class = "content">
+            <section>
+                <div class="hd">
+                    <table width="100%" align = "center" cellspacing = "3" cellpadding="18" style="border: 2px solid #151B54">
+                        <tr>
+                            <td rowspan = "2" width = "36px"><img src = "pictures/UNMB_HP.png" height = "145px"></td>
+                            <td align="center">
+                                <h2>HELP CENTER</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <h3>Tell us how we can help</h3>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="content w-100">
-                        <div class="calendar-container">
-                            <div class="calendar">
-                                <div class="year-header">
-                                    <span class="left-button fa fa-chevron-left" id="prev"> </span>
-                                    <span class="year" id="label"></span>
-                                    <span class="right-button fa fa-chevron-right" id="next"> </span>
-                                </div>
-                                <table class="months-table w-100">
-                                    <tbody>
-                                    <tr class="months-row">
-                                        <td class="month">Jan</td>
-                                        <td class="month">Feb</td>
-                                        <td class="month">Mar</td>
-                                        <td class="month">Apr</td>
-                                        <td class="month">May</td>
-                                        <td class="month">Jun</td>
-                                        <td class="month">Jul</td>
-                                        <td class="month">Aug</td>
-                                        <td class="month">Sep</td>
-                                        <td class="month">Oct</td>
-                                        <td class="month">Nov</td>
-                                        <td class="month">Dec</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+            </section>
+            <section>
+                <div class="hd">
+                    <table width="100%" align = "center" cellspacing = "3" cellpadding="18" style="border: 2px solid #151B54">
+                        <tr>
+                        <td rowspan = "2" width = "36px"><img src = "pictures/UNMB_TT.png" height = "127px"></td>
+                        <td align="center">
+                            <h2>COURSE TIMETABLE / PLAN</h2>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <h4>View an Academic Timetable/Plan</h4>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section>
+                <div class="hd">
+                    <table width="100%" align = "center" cellspacing = "3" cellpadding="18" style="border: 2px solid #151B54">
+                        <tr>
+                        <td rowspan = "2" width = "36px"><img src = "pictures/UNMB_FAQS.png" height = "136px"></td>
+                        <td align="center">
+                            <h2>FAQS</h2>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <h4>Find Intelligent Answers</h4>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section>
+                <div class="hd">
+                    <table width="100%" align = "center" cellspacing = "3" cellpadding="18" style="border: 2px solid #151B54">
+                        <tr>
+                        <td rowspan = "2" width = "36px"><img src = "pictures/UNMB_CTS.png" height = "127px"></td>
+                        <td align="center">
+                            <h2>CONTACTS</h2>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <h4>View all the departments of the university and their contact information</h4>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section>
+                <div class="hd">
+                    <table width="100%" align = "center" cellspacing = "3" cellpadding="18" style="border: 2px solid #151B54">
+                        <tr>
+                            <td rowspan = "2" width = "36px"><img src = "pictures/UNMB_SR.png" height = "145px"></td>
+                            <td align="center">
+                                <h2>REPORT SYSTEM</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <h4>Submit a written report</h4>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
 
-                                <table class="days-table w-100">
-                                    <td class="day">Sun</td>
-                                    <td class="day">Mon</td>
-                                    <td class="day">Tue</td>
-                                    <td class="day">Wed</td>
-                                    <td class="day">Thu</td>
-                                    <td class="day">Fri</td>
-                                    <td class="day">Sat</td>
-                                </table>
-                                <div class="frame">
-                                    <table class="dates-table w-100">
-                                        <tbody class="tbody">
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <button class="button" id="add-button">Add Event</button>
-                            </div>
-                        </div>
-                        <div class="events-container">
-                        </div>
-                        <div class="dialog" id="dialog">
-                            <h2 class="dialog-header"> Add New Event </h2>
-                            <form class="form" id="form">
-                                <div class="form-container" align="center">
-                                    <label class="form-label" id="valueFromMyButton" for="name">Event name</label>
-                                    <input class="input" type="text" id="name" maxlength="36">
-                                    <label class="form-label" id="valueFromMyButton" for="count">Number of people to
-                                        invite</label>
-                                    <input class="input" type="number" id="count" min="0" max="1000000" maxlength="7">
-                                    <input type="button" value="Cancel" class="button" id="cancel-button">
-                                    <input type="button" value="OK" class="button button-white" id="ok-button">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-        </section>
-        </section>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
-        <script>
-            let sidebar = document.querySelector(".sidebar");
-            let searchBtn = document.querySelector(".bx-search-alt");
-            searchBtn.onclick = function () {
-                sidebar.classList.toggle("active");
-            }
-        </script>
+
+
+
 
         <div class="sidebar">
             <div class="profile">
@@ -498,7 +534,7 @@
                         <br>
                         <li><b>Malaysia</b></li>
                         <br>
-                        <li class="helpnumber"><i class="fa fa-phone"></i> +6 (03) 8924 8199</li>
+                        <li class="helpnumber"><i class ="fa fa-phone"></i> +6 (03) 8924 8199</li>
                         <br>
                         <li class="helpmail"><i class="fa fa-envelope"></i> ITServiceDesk@nottingham.edu.my</li>
                         <br>
@@ -520,7 +556,7 @@
             </section>
 
             <section class="footer-legal">
-                <ul class="footer-legal-list">
+                <ul class="footer-legal-list" >
                     <li>&copy; Copyright 2022 UNMBUDDY</li>
                 </ul>
             </section>
@@ -528,7 +564,7 @@
 
         <script>
             var hamburger = document.querySelector(".hamburger");
-            hamburger.addEventListener("click", function () {
+            hamburger.addEventListener("click", function(){
                 document.querySelector("body").classList.toggle("active");
             })
         </script>

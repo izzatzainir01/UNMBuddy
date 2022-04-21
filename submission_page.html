@@ -2,14 +2,9 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendar</title>
+    <title>Submission</title>
     <link href="pictures/UNMLogo.png" rel="icon"/>
 </head>
 <style>
@@ -61,17 +56,19 @@
 
     .menusidebar .sidebar .profile h3 {
         color: #ffffff;
-        margin: 10px 0 0px;
+        margin: 10px 0 5px;
     }
 
     .menusidebar .sidebar .profile p {
         color: rgb(206, 240, 253);
         font-size: 14px;
+        text-align: center;
+        margin-left: 6em;
     }
 
     .menusidebar .sidebar ul li a {
         display: block;
-        padding: 8% 40px;
+        padding: 10% 40px;
         text-decoration: none;
         color: rgb(241, 237, 237);
         font-size: 17px;
@@ -88,7 +85,6 @@
     .menusidebar .sidebar ul li a:hover,
     .menusidebar .sidebar ul li a.active {
         color: #0c7db1;
-
         background: white;
     }
 
@@ -183,10 +179,7 @@
     hr.rounded {
         border-top: 2px solid #bbb;
         border-radius: 5px;
-        margin-left: 4.5em;
-        margin-right: 4.5em;
-        margin-bottom: 0.5em;
-        margin-top: 2em;
+        margin: 2em 4.5em 0.5em;
     }
 
     ul {
@@ -210,10 +203,6 @@
         font-family: Circular, Verdana, sans-serif;
         font-size: 1.37rem;
         padding-bottom: 0.625rem;
-    }
-
-    .container {
-        flex: 1;
     }
 
     .footer-main {
@@ -256,7 +245,6 @@
         margin: 0.5rem;
         font-size: 1.25rem;
         padding: 1.25rem;
-
     }
 
     .footer-legal {
@@ -280,6 +268,208 @@
         flex: 1;
     }
 
+
+    .module .box1 {
+        padding: 0 20px;
+        margin-bottom: 26px;
+    }
+
+    .box1 .module_name {
+        background: #E0F5FE;
+        padding: 15px 14px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 8px #000;
+        margin-top: 2em;
+    }
+
+    .module_name .code {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .module_name .direction a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .module_name .direction a:hover {
+        color: #E74C3C;
+    }
+
+    .module .details {
+        background: #E0F5FE;
+        margin-left: 17px;
+        margin-right: 17px;
+        padding: 20px 20px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 8px #000;
+    }
+
+    .module .details .box2 {
+        background: #fff;
+        padding: 20px 20px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 8px #000;
+        margin: 0 20px 20px;
+    }
+
+    .box2 .name {
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .module .details .box3 {
+        display: flex;
+        background: #fff;
+        padding: 20px 20px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 8px #000;
+        margin: 0 20px 20px;
+    }
+
+    .box3 .title1 {
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .box3 .number {
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+    .module .details .box4 {
+        display: flex;
+        background: #fff;
+        padding: 20px 20px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 8px #000;
+        margin: 0 20px 20px;
+    }
+
+    .box4 .title2 {
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .box4 .status {
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+    .module .details .box5 {
+        display: flex;
+        background: #fff;
+        padding: 20px 20px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 8px #000;
+        margin: 0 20px 20px;
+    }
+
+    .box5 .title3 {
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .box5 .grade {
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+    .module .details .box6 {
+        display: flex;
+        background: #fff;
+        padding: 20px 20px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 8px #000;
+        margin: 0 20px 20px;
+    }
+
+    .box6 .title4 {
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .box6 .grade {
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+    .module .details .box7 {
+        background: #fff;
+        padding: 20px 20px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 8px #000;
+        margin: 0 20px 20px;
+    }
+
+
+    .box7 label {
+
+        background-color: #151B54;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 10px;
+        border: 1px ridge black;
+        font-size: 20px;
+        height: auto;
+    }
+
+    .box7 input {
+        opacity: 0;
+    }
+
+    .box7 button {
+        background-color: #151B54;
+        padding: 5px 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        color: #fff;
+        margin-top: 10px;
+
+    }
+
+
+    .box7 .preview {
+        font-size: 20px;
+        background: #fff;
+        padding: 20px 20px;
+        margin: 0 0px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 8px #000;
+
+    }
+
+    form li, div > p {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        list-style-type: none;
+
+    }
+
+    .module .details .box8 {
+        display: flex;
+        background: #fff;
+        padding: 20px 20px;
+        margin: 0 20px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 8px #000;
+        margin-bottom: 20px;
+    }
+
+    .box8 .title5 {
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .box8 .feedback {
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+
 </style>
 <body>
 <div class="menusidebar">
@@ -299,92 +489,126 @@
         </div>
 
         <! contain >
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6 text-center mb-5">
-                    <h2 class="heading-section"></h2>
+        <div class="module">
+            <div class="box1">
+                <div class="module_name">
+                    <div class="code">COMP_2093_Database Management System</div>
+                    <br>
+                    <div class="direction"><a href="home.html">Dashboard</a> 🡆 <a href="module_details.html">COMP_2093_Database
+                        Management</a> 🡆 <a href="submission.html">Coursework(Spring)</a></div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="content w-100">
-                        <div class="calendar-container">
-                            <div class="calendar">
-                                <div class="year-header">
-                                    <span class="left-button fa fa-chevron-left" id="prev"> </span>
-                                    <span class="year" id="label"></span>
-                                    <span class="right-button fa fa-chevron-right" id="next"> </span>
-                                </div>
-                                <table class="months-table w-100">
-                                    <tbody>
-                                    <tr class="months-row">
-                                        <td class="month">Jan</td>
-                                        <td class="month">Feb</td>
-                                        <td class="month">Mar</td>
-                                        <td class="month">Apr</td>
-                                        <td class="month">May</td>
-                                        <td class="month">Jun</td>
-                                        <td class="month">Jul</td>
-                                        <td class="month">Aug</td>
-                                        <td class="month">Sep</td>
-                                        <td class="month">Oct</td>
-                                        <td class="month">Nov</td>
-                                        <td class="month">Dec</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
 
-                                <table class="days-table w-100">
-                                    <td class="day">Sun</td>
-                                    <td class="day">Mon</td>
-                                    <td class="day">Tue</td>
-                                    <td class="day">Wed</td>
-                                    <td class="day">Thu</td>
-                                    <td class="day">Fri</td>
-                                    <td class="day">Sat</td>
-                                </table>
-                                <div class="frame">
-                                    <table class="dates-table w-100">
-                                        <tbody class="tbody">
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <button class="button" id="add-button">Add Event</button>
-                            </div>
-                        </div>
-                        <div class="events-container">
-                        </div>
-                        <div class="dialog" id="dialog">
-                            <h2 class="dialog-header"> Add New Event </h2>
-                            <form class="form" id="form">
-                                <div class="form-container" align="center">
-                                    <label class="form-label" id="valueFromMyButton" for="name">Event name</label>
-                                    <input class="input" type="text" id="name" maxlength="36">
-                                    <label class="form-label" id="valueFromMyButton" for="count">Number of people to
-                                        invite</label>
-                                    <input class="input" type="number" id="count" min="0" max="1000000" maxlength="7">
-                                    <input type="button" value="Cancel" class="button" id="cancel-button">
-                                    <input type="button" value="OK" class="button button-white" id="ok-button">
-                                </div>
-                            </form>
-                        </div>
+            <div class="details">
+
+                <div class="box2">
+                    <div class="name">Coursework(Spring)</div>
+                    <br>
+                    <div class="decription">Submission : Consult the coursework sheet. ONLY the group leader submits,
+                        e.g.,
+                        Group01.pdf for Group 1.
                     </div>
                 </div>
+
+                <div class="box3">
+                    <div class="title1">Attempt Number:</div>
+                    <div class="number">This is attempt 1</div>
+                </div>
+
+                <div class="box4">
+                    <div class="title2">Submission Status:</div>
+                    <div class="status">No attempt</div>
+                </div>
+
+                <div class="box5">
+                    <div class="title3">Grading Status:</div>
+                    <div class="grade">No marked</div>
+                </div>
+
+                <div class="box6">
+                    <div class="title4">Due Date:</div>
+                    <div class="grade">Friday, 18 March 2022, 5:00 PM</div>
+                </div>
+
+                <div class="box7">
+                    <form>
+                        <div>
+                            <label for="file_uploads">Choose file to upload (docx)</label>
+                        </div>
+                        <input type="file" id="file_uploads" name="file_uploads" accept=" .docx" multiple>
+                        <div class="preview">
+                            <p>No files currently selected for upload</p>
+                        </div>
+                        <div>
+                            <button>Submit</button>
+                        </div>
+                    </form>
+
+                    <script>
+                        const input = document.querySelector('.box7 input');
+                        const preview = document.querySelector('.box7 .preview');
+
+
+                        input.addEventListener('change', updateImageDisplay);
+
+                        function updateImageDisplay() {
+                            while (preview.firstChild) {
+                                preview.removeChild(preview.firstChild);
+                            }
+
+                            const curFiles = input.files;
+                            if (curFiles.length === 0) {
+                                const para = document.createElement('p');
+                                para.textContent = 'No files currently selected for upload';
+                                preview.appendChild(para);
+                            } else {
+                                const list = document.createElement('ol');
+                                preview.appendChild(list);
+
+                                for (const file of curFiles) {
+                                    const listItem = document.createElement('li');
+                                    const para = document.createElement('p');
+
+                                    if (validFileType(file)) {
+                                        para.textContent = `File name ${file.name}, file size ${returnFileSize(file.size)}.`;
+                                        listItem.appendChild(para);
+                                    } else {
+                                        para.textContent = `File name ${file.name}: Not a valid file type. Update your selection.`;
+                                        listItem.appendChild(para);
+                                    }
+
+                                    list.appendChild(listItem);
+                                }
+                            }
+                        }
+
+                        const fileTypes = [
+                            'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+                        ];
+
+                        function validFileType(file) {
+                            return fileTypes.includes(file.type);
+                        }
+
+                        function returnFileSize(number) {
+                            if (number < 1024) {
+                                return number + 'bytes';
+                            } else if (number > 1024 && number < 1048576) {
+                                return (number / 1024).toFixed(1) + 'KB';
+                            } else if (number > 1048576) {
+                                return (number / 1048576).toFixed(1) + 'MB';
+                            }
+                        }
+                    </script>
+                </div>
+
+                <div class="box8">
+                    <div class="title5">Feedback:</div>
+                    <div class="feedback">Comment(0)</div>
+                </div>
+
             </div>
         </div>
-        </section>
-        </section>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
-        <script>
-            let sidebar = document.querySelector(".sidebar");
-            let searchBtn = document.querySelector(".bx-search-alt");
-            searchBtn.onclick = function () {
-                sidebar.classList.toggle("active");
-            }
-        </script>
 
         <div class="sidebar">
             <div class="profile">

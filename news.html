@@ -2,20 +2,15 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendar</title>
-    <link href="pictures/UNMLogo.png" rel="icon"/>
+    <title>Newsletter</title>
+    <link href="pictures/UNMLogo.png" rel="icon" />
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-    * {
+    *{
         list-style: none;
         text-decoration: none;
         margin: 0;
@@ -24,7 +19,7 @@
         font-family: 'Open Sans', sans-serif;
     }
 
-    body {
+    body{
         background: white;
         overflow-x: hidden;
         display: flex;
@@ -32,7 +27,7 @@
         flex-direction: column;
     }
 
-    .menusidebar .sidebar {
+    .menusidebar .sidebar{
         background: rgb(5, 68, 104);
         background-image: linear-gradient(#05CAFF, #0373FF, #0239BF);
         position: fixed;
@@ -44,13 +39,13 @@
         transition: all 0.5s ease;
     }
 
-    .menusidebar .sidebar .profile {
+    .menusidebar .sidebar .profile{
         margin-bottom: 30px;
         text-align: center;
         padding-top: 10px;
     }
 
-    .menusidebar .sidebar .profile img {
+    .menusidebar .sidebar .profile img{
 
         display: block;
         width: 100px;
@@ -59,19 +54,19 @@
         margin: 0 auto;
     }
 
-    .menusidebar .sidebar .profile h3 {
+    .menusidebar .sidebar .profile h3{
         color: #ffffff;
-        margin: 10px 0 0px;
+        margin: 10px 0 5px;
     }
 
-    .menusidebar .sidebar .profile p {
+    .menusidebar .sidebar .profile p{
         color: rgb(206, 240, 253);
         font-size: 14px;
     }
 
-    .menusidebar .sidebar ul li a {
+    .menusidebar .sidebar ul li a{
         display: block;
-        padding: 8% 40px;
+        padding: 10% 40px;
         text-decoration: none;
         color: rgb(241, 237, 237);
         font-size: 17px;
@@ -79,36 +74,37 @@
         font-family: Circular, Verdana, sans-serif;
     }
 
-    .menusidebar .sidebar ul li a .icon {
+    .menusidebar .sidebar ul li a .icon{
         color: #dee4ec;
         width: 30px;
         display: inline-block;
     }
 
     .menusidebar .sidebar ul li a:hover,
-    .menusidebar .sidebar ul li a.active {
+    .menusidebar .sidebar ul li a.active{
         color: #0c7db1;
 
-        background: white;
+        background:white;
     }
 
     .menusidebar .sidebar ul li a:hover .icon,
-    .menusidebar .sidebar ul li a.active .icon {
+    .menusidebar .sidebar ul li a.active .icon{
         color: #0c7db1;
     }
 
     .menusidebar .sidebar ul li a:hover:before,
-    .menusidebar .sidebar ul li a.active:before {
+    .menusidebar .sidebar ul li a.active:before{
         display: block;
+
     }
 
-    .menusidebar .section {
+    .menusidebar .section{
         width: calc(100% - 225px);
         margin-left: 225px;
         transition: all 0.5s ease;
     }
 
-    .menusidebar .section .top_navbar {
+    .menusidebar .section .top_navbar{
         background: #05CAFF;
         background-image: linear-gradient(to right, #05CAFF, #0373FF, #0239BF);
         height: 50px;
@@ -117,12 +113,12 @@
         padding: 0 30px;
     }
 
-    .menusidebar .section .top_navbar .hamburger a {
+    .menusidebar .section .top_navbar .hamburger a{
         font-size: 28px;
         color: #f4fbff;
     }
 
-    .menusidebar .section .top_navbar .hamburger a:hover {
+    .menusidebar .section .top_navbar .hamburger a:hover{
         color: #a2ecff;
     }
 
@@ -171,11 +167,11 @@
         }
     }
 
-    body.active .menusidebar .sidebar {
+    body.active .menusidebar .sidebar{
         left: -225px;
     }
 
-    body.active .menusidebar .section {
+    body.active .menusidebar .section{
         margin-left: 0;
         width: 100%;
     }
@@ -201,11 +197,11 @@
         color: #eee;
     }
 
-    a:hover {
+    a:hover{
         text-decoration: underline;
     }
 
-    .footer-title {
+    .footer-title{
         color: black;
         font-family: Circular, Verdana, sans-serif;
         font-size: 1.37rem;
@@ -216,13 +212,13 @@
         flex: 1;
     }
 
-    .footer-main {
+    .footer-main{
         padding: 1.25rem 1.875rem;
         display: flex;
         flex-warp: wrap;
     }
 
-    .footer-main a {
+    .footer-main a{
         color: black;
     }
 
@@ -232,7 +228,7 @@
     }
 
     @media only screen and (min-width: 77.5rem) {
-        .footer-main {
+        .footer-main{
             justify-content: space-evenly;
         }
     }
@@ -248,11 +244,11 @@
         border-top: 1px black solid;
     }
 
-    .footer-social-list a {
+    .footer-social-list a{
         color: black;
     }
 
-    .footer-social-list th {
+    .footer-social-list th{
         margin: 0.5rem;
         font-size: 1.25rem;
         padding: 1.25rem;
@@ -264,20 +260,159 @@
         background-color: #333;
         color: white;
     }
-
     .footer-legal-list {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         color: white;
     }
-
     .footer-legal-list li {
         margin: 0.125rem 0.625rem;
     }
 
     .footer-legal-list li:nth-last-child(2) {
         flex: 1;
+    }
+
+    .sidebar.active ~ .newsletter{
+        width: calc(100% - 60px);
+        left: 60px;
+    }
+
+    .sidebar.active ~ .newsletter nav{
+        left: 60px;
+        width: calc(100% - 60px);
+    }
+
+    .newsletter .activity{
+        position: relative;
+        padding-top: 104px;
+    }
+
+    .activity .box{
+        padding: 0 20px;
+        margin-bottom: 26px;
+    }
+
+    .box .news{
+        background: #E0F5FE;
+        padding: 15px 14px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 8px #000;
+        height:350px;
+        margin-top: 2em;
+    }
+
+    .news .top{
+        font-size:25px;
+        font-weight:bold;
+    }
+
+    .news img{
+        width:100%;
+        height:250px
+    }
+
+    .news .view_btn{
+        background-color:#151B54;
+        text-transform: uppercase;
+        font-size:20px;
+        text-decoration:none;
+        color:#fff;
+        float:right;
+        width:300px;
+        height:40px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .activity .filter{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom:20px;
+
+    }
+
+    .activity .filter .Category_box{
+        width: 25%;
+        background: #E0F5FE;
+        padding: 20px 30px;
+        margin: 0 20px;
+        margin-left:20px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 8px #000;
+    }
+
+    .filter .top2{
+        font-size:23px;
+        font-weight:800;
+        text-decoration:underline;
+    }
+
+    .filter .Category_box .title{
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .filter input {
+        width: 20px;
+        height: 20px;
+    }
+
+    .filter  label{
+        font-size: 18px;
+        line-height:2;
+    }
+
+    .activity .filter .Result{
+        width: 75%;
+        background: #E0F5FE;
+        padding: 20px 30px;
+        margin: 0 20px 0 0;
+        border-radius: 12px;
+        box-shadow: 0px 0px 8px #000;
+        height:500px;
+        overflow:scroll;
+
+    }
+
+    .filter .Result .title{
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .Result_box .Search_result_box{
+        background: #fff  ;
+        border-radius: 10px;
+        margin: 30px;
+        width:90%;
+    }
+
+    .Result_img img{
+        width:230px;
+        height: 210px;
+        margin: 20px;
+
+    }
+    .Search_result_box .result{
+        display:flex;
+    }
+
+    .Search_result_box .Description{
+        padding: 10px 20px;
+    }
+    .Description .name{
+        font-size: 25px;
+        text-decoration:none;
+        color:#000;
+        font-weight:bold;
+    }
+    .Description p{
+        font-size:20px;
+    }
+    .Result_box .Search_result_box:hover{
+        box-shadow: 2px 2px 30px rgba(0,0,0,0.9);
     }
 
 </style>
@@ -299,91 +434,141 @@
         </div>
 
         <! contain >
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6 text-center mb-5">
-                    <h2 class="heading-section"></h2>
+        <div class="activity">
+            <div class="box">
+                <div class="news">
+                    <div class="top">Co-curricular</div>
+                    <img src="pictures/co.png">
+                    <div><a href="https://www.sanottingham.org/" class="view_btn">See for more details</a></div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="content w-100">
-                        <div class="calendar-container">
-                            <div class="calendar">
-                                <div class="year-header">
-                                    <span class="left-button fa fa-chevron-left" id="prev"> </span>
-                                    <span class="year" id="label"></span>
-                                    <span class="right-button fa fa-chevron-right" id="next"> </span>
-                                </div>
-                                <table class="months-table w-100">
-                                    <tbody>
-                                    <tr class="months-row">
-                                        <td class="month">Jan</td>
-                                        <td class="month">Feb</td>
-                                        <td class="month">Mar</td>
-                                        <td class="month">Apr</td>
-                                        <td class="month">May</td>
-                                        <td class="month">Jun</td>
-                                        <td class="month">Jul</td>
-                                        <td class="month">Aug</td>
-                                        <td class="month">Sep</td>
-                                        <td class="month">Oct</td>
-                                        <td class="month">Nov</td>
-                                        <td class="month">Dec</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
 
-                                <table class="days-table w-100">
-                                    <td class="day">Sun</td>
-                                    <td class="day">Mon</td>
-                                    <td class="day">Tue</td>
-                                    <td class="day">Wed</td>
-                                    <td class="day">Thu</td>
-                                    <td class="day">Fri</td>
-                                    <td class="day">Sat</td>
-                                </table>
-                                <div class="frame">
-                                    <table class="dates-table w-100">
-                                        <tbody class="tbody">
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <button class="button" id="add-button">Add Event</button>
-                            </div>
-                        </div>
-                        <div class="events-container">
-                        </div>
-                        <div class="dialog" id="dialog">
-                            <h2 class="dialog-header"> Add New Event </h2>
-                            <form class="form" id="form">
-                                <div class="form-container" align="center">
-                                    <label class="form-label" id="valueFromMyButton" for="name">Event name</label>
-                                    <input class="input" type="text" id="name" maxlength="36">
-                                    <label class="form-label" id="valueFromMyButton" for="count">Number of people to
-                                        invite</label>
-                                    <input class="input" type="number" id="count" min="0" max="1000000" maxlength="7">
-                                    <input type="button" value="Cancel" class="button" id="cancel-button">
-                                    <input type="button" value="OK" class="button button-white" id="ok-button">
-                                </div>
-                            </form>
-                        </div>
+            <div class=filter>
+                <div class="Category_box">
+
+                    <div class="top2">Filter Result</div>
+                    <br>
+                    <div class="title">Category</div>
+                    <br>
+                    <form>
+                        <label><input type="checkbox" value="SA"/> SA Activities</label><br>
+                        <label><input type="checkbox" value="Career"/> Career</label><br>
+                        <label><input type="checkbox" value="Office"/> Provost Office</label><br>
+
+                    </form>
+                    <div class="Date_box">
+                        <div class="title">Date</div>
+                        <br>
+                        <form>
+                            <label><input type="checkbox" value="This"/>This Week</label><br>
+                            <label><input type="checkbox" value="Last"/>Last Week</label><br>
+                            <label><input type="checkbox" value="Month"/>Last Month</label><br>
+                        </form>
                     </div>
                 </div>
+
+                <div class="Result">
+                    <div class="title">Search Result</div>
+                    <div class="Result_box">
+                        <div class="Search_result_box">
+                            <div class="result" data-category="SA Month">
+                                <div class="Result_img">
+                                    <img src="pictures/fiction day.png">
+                                </div>
+                                <div class="Description">
+                                    <a href="#" class=name>Fiction Day</a>
+                                    <p>Dark and difficult times lie ahead. Soon we must all face the choice between what is
+                                        right and what is easy. It is unknown the unknown we fear when we look upon death
+                                        and darkness, nothing more. Pick your right fictional character to survive through
+                                        the adventure! </p>
+                                    <p>Date:15th February 2022</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="Search_result_box">
+                            <div class="result" data-category="Office This">
+                                <div class="Result_img">
+                                    <img src="pictures/announcement.jpg">
+                                </div>
+                                <div class="Description">
+                                    <a href="#" class=name>Reporting of individual COVID-19 cases on campus</a>
+                                    <p>The Senior Defence Minister YB Dato' Seri Hishammuddin Tun Hussein recently announced
+                                        that Malaysia is transitioning to the endemic stage of COVID-19 with the removal of
+                                        several restrictions and standard operating procedures.
+                                        In view of this change, the university will stop sending emails to report individual
+                                        COVID-19 positive cases on campus. Instead, we will notify the university community
+                                        of an outbreak or high risk of an outbreak to contain the spread on a fortnightly
+                                        basis.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="Search_result_box">
+                            <div class="result" data-category="Career Last">
+                                <div class="Result_img">
+                                    <img src="pictures/KPMG.jpg">
+                                </div>
+                                <div class="Description">
+                                    <a href="#" class=name>Data Analytic Workshop by KPMG (Career Skills Workshop)</a>
+                                    <p>Date: 9th March 2022 (Wednesday) </p>
+                                    <p>Time: 4.30 PM – 6.30 PM (Malaysia Time GMT 8)</p>
+                                    <p>Platform : TEAMS (Email invite will be sent to registered participants)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
-        </section>
-        </section>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
         <script>
-            let sidebar = document.querySelector(".sidebar");
-            let searchBtn = document.querySelector(".bx-search-alt");
-            searchBtn.onclick = function () {
-                sidebar.classList.toggle("active");
+            var $filterCheckboxes = $('input[type="checkbox"]');
+            var filterFunc = function () {
+
+                var selectedFilters = {};
+
+                $filterCheckboxes.filter(':checked').each(function () {
+
+                    if (!selectedFilters.hasOwnProperty(this.name)) {
+                        selectedFilters[this.name] = [];
+                    }
+
+                    selectedFilters[this.name].push(this.value);
+                });
+
+                var $filteredResults = $('.result');
+                $.each(selectedFilters, function (name, filterValues) {
+
+
+                    $filteredResults = $filteredResults.filter(function () {
+
+                        var matched = false,
+                            currentFilterValues = $(this).data('category').split(' ');
+
+
+                        $.each(currentFilterValues, function (_, currentFilterValue) {
+
+
+                            if ($.inArray(currentFilterValue, filterValues) != -1) {
+                                matched = true;
+                                return false;
+                            }
+                        });
+                        return matched;
+
+                    });
+                });
+
+                $('.result').hide().filter($filteredResults).show();
             }
+
+            $filterCheckboxes.on('change', filterFunc);
+
         </script>
 
         <div class="sidebar">
@@ -498,7 +683,7 @@
                         <br>
                         <li><b>Malaysia</b></li>
                         <br>
-                        <li class="helpnumber"><i class="fa fa-phone"></i> +6 (03) 8924 8199</li>
+                        <li class="helpnumber"><i class ="fa fa-phone"></i> +6 (03) 8924 8199</li>
                         <br>
                         <li class="helpmail"><i class="fa fa-envelope"></i> ITServiceDesk@nottingham.edu.my</li>
                         <br>
@@ -520,7 +705,7 @@
             </section>
 
             <section class="footer-legal">
-                <ul class="footer-legal-list">
+                <ul class="footer-legal-list" >
                     <li>&copy; Copyright 2022 UNMBUDDY</li>
                 </ul>
             </section>
@@ -528,7 +713,7 @@
 
         <script>
             var hamburger = document.querySelector(".hamburger");
-            hamburger.addEventListener("click", function () {
+            hamburger.addEventListener("click", function(){
                 document.querySelector("body").classList.toggle("active");
             })
         </script>
