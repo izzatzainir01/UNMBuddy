@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 5px 3%;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.8);
+	position: relative;
+	z-index: 1;
+	background: white;
+	text-transform: uppercase;
+
+}
+
+.logo {
+	cursor: pointer;
+	max-height: 70px;
+	margin-right: auto;
+}
+
+.nav_links {
+	list-style: none;
+	text-decoration: none;
+}
+
+.nav_links li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+
+.nav_links li, .nav_links button{
+	font-weight: 500px;
+	font-size: 18px;
+	color: rgb(34, 54, 104);
+	text-decoration: none;
+}
+
+
+
+.nav_links li, .nav_links a {
+	transition: all 0.3s ease 0s;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.nav_links li, .nav_links a:hover {
+	color: #AFDEDC;
+
+}
+
+.cta button {
+	margin-left: 30px;
+	padding: 9px 25px;
+	background-color: rgba(222,27,92,1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	color: white;
+	font-weight: 750;
+	font-size: 16px;
+
+}
+
+.cta button:hover {
+	background-color: rgb(262,37,92);
+}
+
+.showcase {
+	background: black;
+	color: white;
+	width: 100%;
+	height: 95vh;
+	padding: 200px;
+	display: flex;
+	position: relative;
+}
+
+.showcase video {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.7;
+}
+
+.text {
+	position: relative;
+	padding-top: 300px;
+	text-transform: uppercase;
+	
+}
+
+.text h2{
+	font-size: 5em;
+	font-weight: 800;
+	line-height: 1em;
+	text-shadow: 5px 5px 10px #000;
+}
+
+.text h3{
+	font-size: 2em;
+	font-weight: 700;
+	line-height: 1em;
+	margin: 20px 0;
+	max-width: 700px;
+	text-align: justify;
+	text-shadow: 5px 5px 10px #000;
+}
+
+.text a {
+	display: inline-block;
+	font-size: 1em;
+	background: white;
+	padding: 10px 30px;
+	text-decoration: none;
+	color: #111;
+	margin-top: 10px;
+	letter-spacing: 2px;
+	transition: 0.2s;
+	box-shadow: 5px 5px;;
+}
+
+.text a:hover {
+	letter-spacing: 6px;
+}
+
+.division {
+	text-align: center;
+	position: relative;
+	min-height: 100vh;
+	color: white;
+	background-size: cover;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("/pictures/trent-building.jpg");
+	z-index: 1;
+	background-position: center;
+
+}
+.text_div {
+	width: 90%;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+
+}
+
+.text_div h2 {
+	font-size: 4em;
+	font-weight: 900;
+	line-height: 80px;
+
+
+}
+
+.text_div p {
+	margin-top: 50px;
+	font-size: 1.1em;
+	font-weight: 300;
+	line-height: 30px;
+	padding: 0 400px;
+
+}

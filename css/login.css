@@ -1,0 +1,48 @@
+.line {
+    border: 1px solid #000000;
+}
+button:hover {
+    background-color: #103E68;
+    opacity: 0.9;
+}
+
+.footer-social {
+    text-align: center;
+    padding: 0px 40% 0px 35%;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px black solid;
+}
+
+.footer-social-list a{
+    color: black;
+}
+
+.footer-social-list th{
+    margin: 0.5rem;
+    font-size: 1.25rem;
+    padding: 1.25rem;
+
+}
+
+.footer-legal {
+    padding: 5px 40%;
+    background-color: #333;
+    color: white;
+}
+.footer-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+.footer-legal-list li {
+    margin: 0.125rem 0.625rem;
+}
+
+.footer-legal-list li:nth-last-child(2) {
+    flex: 1;
+}
